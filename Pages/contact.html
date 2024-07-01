@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Kiprotich Busienei - Contact </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../Assets/home.css">
+    <style>
+      .intro{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        height:40vh;
+        width: 100%;
+        padding-top: 10vh;
+        background-color: #fff;
+        background-position: center;
+      }
+      .intro-text{
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .reach-out {
+        max-width: 90%;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .reach-out h2 {
+        margin-top: 0;
+        font-weight: bold;
+        color: #333;
+      }
+
+      .contact-methods {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .method {
+        flex-basis: 45%;
+        margin: 20px;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .method i {
+        font-size: 24px;
+        margin-right: 10px;
+        color: #666;
+      }
+
+      .method h3 {
+        margin-top: 0;
+        font-weight: bold;
+        color: #333;
+      }
+
+      .method p {
+        margin-bottom: 20px;
+      }
+
+      .method a {
+        text-decoration: none;
+        color: #337ab7;
+      }
+
+      .method a:hover {
+        color: #23527c;
+      }
+
+      form {
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Style the popup form container */
+      #popup-form-container {
+        position: fixed;
+        top: 10px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+      }
+      
+      /* Style the popup form */
+      #popup-form {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #f9f9f9;
+        padding: 20px;
+        border: 1px solid #ddd;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 400px;
+      }
+      
+      /* Style the form fields */
+      .form-group {
+        margin-bottom: 20px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #333;
+      }
+      
+      input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+      }
+      
+      button[type="submit"] {
+        background-color: #337ab7;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      button[type="submit"]:hover {
+        background-color: #23527c;
+      }
+      
+      /* Style the close button */
+      #close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #fff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+      
+      #close-btn:hover {
+        background-color: #ccc;
+      }
+
+      @media (max-width: 768px) {
+        .intro{
+          height:50vh;
+          padding-top: 10vh;
+          width: 100%;
+        }
+        .intro-text {
+          width: auto;
+          height: auto;
+          text-align: center;
+        }
+        .intro-text h1 {
+          font-size: 30px; /* adjust the font size to your liking */
+        }
+        .intro-text p {
+          font-size: 17px; /* adjust the font size to your liking */
+        }
+        .intro-text ul {
+          font-size: 10px; /* adjust the font size to your liking */
+        }
+        /* Style the popup form container */
+        #popup-form-container {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+          display: none;
+        }
+      
+        /* Style the popup form */
+        #popup-form {
+          position: relative;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: #f9f9f9;
+          padding: 15px; /* reduced padding */
+          border: 1px solid #ddd;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          width: 300px; /* reduced width */
+        }
+      
+        /* Style the form fields */
+        .form-group {
+          margin-bottom: 15px; /* reduced margin */
+        }
+      
+        label {
+          font-size: 16px; /* reduced font size */
+          margin-bottom: 10px;
+          font-weight: bold;
+          color: #333;
+        }
+      
+        input, textarea {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 15px; /* reduced margin */
+          border: 1px solid #ccc;
+        }
+      
+        button[type="submit"] {
+          background-color: #337ab7;
+          color: #fff;
+          padding: 10px 15px; /* reduced padding */
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      
+        button[type="submit"]:hover {
+          background-color: #23527c;
+        }
+      
+        /* Style the close button */
+        #close-btn {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          background-color: #fff;
+          border: none;
+          padding: 10px;
+          cursor: pointer;
+        }
+      
+        #close-btn:hover {
+          background-color: #ccc;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+      <div class="nav-bar" id="nav-bar">
+          <div class="logo">Portfolio</div>
+          <nav>
+              <ul>
+                  <li><a href="../homepage.html">Home</a></li>
+                  <li><a href="./about.html">About</a></li>
+                  <li><a href="./Projects.html">Projects</a></li>
+                  <li><a href="./contact.html">Contact</a></li>
+              </ul>
+              <i class="fas fa-bars" id="menu"></i>
+          </nav>
+      </div>
+      <div class="intro">
+        <div class="intro-text">
+          <h1>Get in Touch</h1>
+          <p>Want to discuss a project, ask a question, or just say hi?</p>
+      </div>
+        <div class="intro-image" style="display: none;">
+            <img src="../Assets/Img/DSC_4204.PNG" alt="Job Kiprotich">
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="reach-out">
+        <h2>Reach Out</h2>
+        <p>Get in touch with me through various channels:</p>
+        <div class="contact-methods">
+          <div class="method">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p>Send me an email at <a href="mailto:jobtanui21@gmail.com">jobtanui21@gmail.com</a>. I'll respond within 24 hours.</p>
+          </div>
+          <div class="method">
+            <i class="fas fa-phone"></i>
+            <h3>Phone</h3>
+            <p>Call or text me at <a href="tel:+254707696045">+254707696045</a>. I'm available from 9am to 5pm EST.</p>
+          </div>
+          <div class="method">
+            <i class="fab fa-linkedin"></i>
+            <h3>LinkedIn</h3>
+            <p>Connect with me on <a href="https://www.linkedin.com/in/job-busienei">LinkedIn</a> and let's discuss business opportunities.</p>
+          </div>
+          <div class="method">
+            <i class="fab fa-twitter"></i>
+            <h3>Twitter</h3>
+            <p>Follow me on <a href="https://twitter.com/jobtanui21">Twitter</a> for updates, insights, and industry news.</p>
+          </div>
+          <div class="method">
+            <i class="fab fa-facebook"></i>
+            <h3>Facebook</h3>
+            <p>Let's connect on <a href="https://www.facebook.com/jobtanui21">Facebook</a> and stay updated on my projects and services.</p>
+          </div>
+          <div class="method">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Address</h3>
+            <p>Visit me at my office located at <a href="https://www.google.com/maps/place/Your+Office+Address">Your Office Address</a>.</p>
+          </div>
+        </div>
+        <p>Or, fill out the form below to send me a message:</p>
+        <!-- The button to trigger the popup form -->
+<button id="contact-btn">Contact Us</button>
+
+<!-- The popup form container -->
+<div id="popup-form-container">
+  <div id="popup-form">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit">Send Message</button>
+      </div>
+    </form>
+    <button id="close-btn">Close</button>
+  </div>
+</div>
+      <section class="contact">
+        <div class="contact-text">
+          <h2>Contact</h2>
+          <p>Feel free to reach out to me on any of the platforms below.</p>
+        </div>
+        <div class="contact-image">
+          <img src="Assets/Img/DSC_4204.PNG" alt="Job Kiprotich"> 
+        </div>
+        <div class="contact-icon">
+          <a href="#" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-text">
+        <p>© 2021 Pratibha. All rights reserved.</p>
+      </div>  
+    </footer>
+    <script>
+      const navBar = document.querySelector('.nav-bar');
+      const menuIcon = document.querySelector('.nav-bar i.fas.fa-bars');
+      const navMenu = document.querySelector('nav ul');
+
+      menuIcon.addEventListener('click', () => {
+        navBar.classList.toggle('show-menu');
+      });
+  </script>
+  <script>
+    // Get the elements
+    const contactBtn = document.getElementById('contact-btn');
+    const popupFormContainer = document.getElementById('popup-form-container');
+    const closeBtn = document.getElementById('close-btn');
+    const navigations = document.getElementById('nav-bar');
+
+    // Add event listeners
+    contactBtn.addEventListener('click', () => {
+      popupFormContainer.style.display = 'block';
+      navigations.style.display = 'none';
+    });
+
+    closeBtn.addEventListener('click', () => {
+      popupFormContainer.style.display = 'none';
+      navigations.style.display = 'block';
+    });
+
+    // Add a click event listener to the popup form container to close it when clicked outside
+    popupFormContainer.addEventListener('click', (e) => {
+      if (e.target === popupFormContainer) {
+        popupFormContainer.style.display = 'none';
+        navigations.style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>

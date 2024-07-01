@@ -1,0 +1,118 @@
+/* styles.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+.contact {
+    margin-left: auto;
+    font-size: 1rem;
+}
+
+.head_content {
+    padding: 20px;
+    background-color: #ddd;
+}
+
+/* Main section styles */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+h2 {
+    font-size: 1.5rem;
+    align-self: center;
+}
+.projects, .certificates {
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.projects h2, .certificates h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.project-list, .certificate-list {
+    margin-top: 10px;
+}
+
+.project-item, .certificate-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-menu, .social-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-menu li, .social-links li {
+    margin-right: 10px;
+}
+
+.footer-menu li a, .social-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-menu li a:hover, .social-links li a:hover {
+    text-decoration: underline;
+}
